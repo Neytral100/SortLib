@@ -44,4 +44,4 @@ $(OBJ_DIR):
 
 .PHONY: clean
 clean:
-	-rm -f $(APP_PATH) $(LIB_PATH) $(APP_OBJECTS) $(LIB_OBJECTS) $(OBJ_DIR) $(DEPS) 
+	-rm -f $(APP_PATH) $(LIB_PATH) $(APP_OBJECTS) $(LIB_OBJECTS) $(DEPS) 

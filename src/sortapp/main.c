@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <sortlib/heap.h>
+#include <sortlib/insertion.h>
 #include <stdlib.h>
 
 int main()
@@ -13,7 +14,9 @@ int main()
 	array [3] = 6;
 	array [4] = 0;
 
-	heap_sort (array, size);
+	//heap_sort (array, size);
+
+	insertion_sort (array, size);
 
 	for (int i = 0; i < size; i++){
 		printf("%d ", array[i]);
