@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <sortlib/heap.h>
-#include <sortlib/insertion.h>
+#include <libsort/heap.h>
+#include <libsort/insertion.h>
 #include <stdlib.h>
 
 int main()
