@@ -27,13 +27,13 @@ all: $(BIN_DIR) $(OBJ_DIR) $(SRC_DIR) $(RES_DIR) $(APP_PATH)
 -include $(DEPS)
 
 $(APP_PATH): $(APP_OBJECTS) $(LIB_PATH)
-	$(CC) $(CFLAGS) $(CPPFLAGS) $^ -L$(OBJ_DIR)/$(SRC_DIR)/$(LIB_NAME) -lsort -o $@
+	$(CC) $(CFLAGS) $(CPPFLAGS) -O0 $^ -L$(OBJ_DIR)/$(SRC_DIR)/$(LIB_NAME) -lsort -o $@
 
 $(LIB_PATH): $(LIB_OBJECTS)
-	$(CC) -shared -o $(LIB_PATH) $^
+	$(CC) -shared -o  $(LIB_PATH) -g $^
 
 $(OBJ_DIR)/%.o: %.c
-	$(CC) -fPIC -c $(CFLAGS) $(CPPFLAGS) $< -o $@
+	$(CC) -fPIC -c $(CFLAGS) $(CPPFLAGS) $< -g -o $@
 
 $(BIN_DIR):
 	mkdir -p $(BIN_DIR)

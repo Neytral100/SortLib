@@ -1,1 +1,1 @@
-void insertion_sort(int *array, int size);
+void insertion_sort(void * array, size_t number, size_t size, int ( * comparator ) ( const void *, const void *));
