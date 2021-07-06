@@ -22,7 +22,7 @@ int main()
 	array [3] = 6;
 	array [4] = 0;
 
-	insertion_sort (array, size, sizeof(int), fptr);
+	heap_sort (array, size, sizeof(int), fptr);
 
 	for (int i = 0; i < size; i++){
 		printf("%d ", array[i]);
